@@ -1,0 +1,28 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="{% static 'email.css' %}">
+</head>
+
+<body>
+    <div class="header">
+        <span class="logo">
+            <img src="cid:logo" height="50px">
+        </span>
+        <div class="clearfix"></div>
+    </div>
+    <div class="email_body">
+        {% block content %}
+
+        {% endblock content%}
+        {% include 'signature.html' %}
+        {% include 'email_footer.html' %}
+    </div>
+</body>
+</html>
