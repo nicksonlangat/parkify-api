@@ -11,3 +11,6 @@ su:
 
 sort:
 	isort accounts core parking_project common
+
+celery:
+	celery -A parking_project worker --loglevel=info
