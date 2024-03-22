@@ -4,12 +4,15 @@ Parkify API is the backend codebase for an online parking garage.
 The whole idea of the system is simple; seamlessly allow users
 to find parking spots in the facility and park their vehicles.
 
-The system needs to:
+The system needs to allow users to:
 
-- Allow users to create accounts and login.
-- select a spot that supports their vehicle type.
+- Create accounts and login.
+- Select a spot that supports their vehicle type.
 - Book the spot.
 - Pay for the booked spot.
+- Download the parking ticket/receipt as a PDF.
+- Receive the ticket via their email address.
+- Receive an SMS confirmation on their booking.
 
 The system will not allow:
 
@@ -21,7 +24,8 @@ Here is a detailed document where I share more about the system [view it here](/
 
 ### RUNNING THE PROJECT
 
-To run the project,
+To run the project:
+
 - clone the repo `[here](https://github.com/nicksonlangat/parkify-api.git)`
 - create a virtual environment `virtualenv env`
 - install dependencies `pip install -r requirements.txt`
@@ -29,4 +33,4 @@ To run the project,
 - use the `Makefile` to add admin `make su`
 - use the `Makefile` to start celery `make celery`
 - use the `Makefile` to run the dev server `make run`
-- [Go to](http://localhost:8000) to view the application in browser.
+- [Go to this link](http://localhost:8000) to view the application in browser.
